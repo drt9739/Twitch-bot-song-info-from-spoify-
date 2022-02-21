@@ -62,7 +62,7 @@ You need to take an access token
 
 ![Screenshot_3](https://user-images.githubusercontent.com/87109163/154968387-757bfcd0-05fc-49e1-9bb7-9b4907dd702a.png)
 
-5. Start code main.py -->  py main.py
+5. After we insert all the tokens into the config.py file and run the code main.py --> py main.py
 
 6. Once launched, you will have the spotify authorization site open. You need to log in and pass the resulting google.com link to the console 
 
