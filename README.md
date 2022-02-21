@@ -21,6 +21,7 @@ RU 🇷🇺 :
 
 4. Достаём twitch токен из https://twitchtokengenerator.com/
 ![Screenshot_2](https://user-images.githubusercontent.com/87109163/154968163-8a1e04ec-b768-487c-aa5e-010f104248df.png)
+
 Выбираем bot chat token и логинимся в аккаунт бота
 
 Нужно взять access token
