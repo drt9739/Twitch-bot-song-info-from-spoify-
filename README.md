@@ -15,9 +15,19 @@ RU 🇷🇺 :
 
 И вставляем в конфиг
 
-4. Достаём twitch токен https://twitchtokengenerator.com/
+Также тут же заходим в настройки приложения ('EDIT SETTINGS') и в область 'Redirect URIs' вписываем 'https://google.com/' ![Screenshot_1](https://user-images.githubusercontent.com/87109163/154967612-15a90f18-18d3-448e-89f6-b09c808c1e99.png)
 
-5. После запускаем код main.py -->  py main.py
+И сохраняем
+
+4. Достаём twitch токен из https://twitchtokengenerator.com/
+![Screenshot_2](https://user-images.githubusercontent.com/87109163/154968163-8a1e04ec-b768-487c-aa5e-010f104248df.png)
+Выбираем bot chat token и логинимся в аккаунт бота
+
+Нужно взять access token
+
+![Screenshot_3](https://user-images.githubusercontent.com/87109163/154968387-757bfcd0-05fc-49e1-9bb7-9b4907dd702a.png)
+
+5. После вставляем все токены в файл config.py и запускаем код main.py -->  py main.py
 
 6. После запуска у вас откроется сайт авторизации spotify. Вам нужно авторизироваться и передать получившуюся ссылку google.com в консоль
 
@@ -38,7 +48,18 @@ And in the resulting application we take Client ID and Client Secret ![234](http
 
 And paste in the config
 
+Also immediately go to the application settings ('EDIT SETTINGS') and in the 'Redirect URIs' area enter 'https://google.com/' ![Screenshot_1](https://user-images.githubusercontent.com/87109163/154967612-15a90f18-18d3-448e-89f6-b09c808c1e99.png)
+
+And save
+
 4. Get a twitch token https://twitchtokengenerator.com/
+![Screenshot_2](https://user-images.githubusercontent.com/87109163/154968163-8a1e04ec-b768-487c-aa5e-010f104248df.png)
+
+Select bot chat token and log in to the bot account
+
+You need to take an access token
+
+![Screenshot_3](https://user-images.githubusercontent.com/87109163/154968387-757bfcd0-05fc-49e1-9bb7-9b4907dd702a.png)
 
 5. Start code main.py -->  py main.py
 
