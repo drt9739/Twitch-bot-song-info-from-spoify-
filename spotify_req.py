@@ -17,6 +17,21 @@ def status():
     return current['is_playing']
 
 
+def data_update():
+    global song_info, scope, token, token_dict, spotify_object
+    song_info = dict()
+    scope = 'user-read-currently-playing'
+
+    oauth_object = spotipy.SpotifyOAuth(client_id=config.spotify_client_id,
+                                        client_secret=config.spotify_secret,
+                                        redirect_uri=config.spotify_redirect_uri,
+                                        scope=scope)
+
+    token_dict = oauth_object.get_access_token()
+    token = token_dict['access_token']
+    spotify_object = spotipy.Spotify(auth=token)
+
+
 song_info = dict()
 scope = 'user-read-currently-playing'
 
