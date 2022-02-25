@@ -9,7 +9,7 @@ spotify_secret = 'spotify_secret'
 spotify_redirect_uri = 'https://google.com/'
 
 # ID of your playlist for requests
-spotify_playlist_id = 'id'
+spotify_playlist_id = 'playlist_url'
 
 # twitch token
 TOKEN_TWITCH = 'Token'
