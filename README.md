@@ -28,11 +28,13 @@ RU 🇷🇺 :
 
 ![Screenshot_3](https://user-images.githubusercontent.com/87109163/154968387-757bfcd0-05fc-49e1-9bb7-9b4907dd702a.png)
 
-5. После вставляем все токены в файл config.py и запускаем код main.py -->  py main.py
+5. Вставьте в поле "spotify_playlist_id" ссылку на ваш плейлист для заказов музыки.
 
-6. После запуска у вас откроется сайт авторизации spotify. Вам нужно авторизироваться и передать получившуюся ссылку google.com в консоль
+6. После вставляем все токены в файл config.py и запускаем код main.py -->  py main.py
 
-7. Всё готово!!!
+7. После запуска у вас откроется сайт авторизации spotify. Вам нужно авторизироваться и передать получившуюся ссылку google.com в консоль
+
+8. Всё готово!!!
 
 
 EN 🇬🇧 :
@@ -62,8 +64,10 @@ You need to take an access token
 
 ![Screenshot_3](https://user-images.githubusercontent.com/87109163/154968387-757bfcd0-05fc-49e1-9bb7-9b4907dd702a.png)
 
-5. After we insert all the tokens into the config.py file and run the code main.py --> py main.py
+5. Place in the field "spotify_playlist_id" a link to your playlist for music orders.
 
-6. Once launched, you will have the spotify authorization site open. You need to log in and pass the resulting google.com link to the console 
+6. After we insert all the tokens into the config.py file and run the code main.py --> py main.py
 
-7. Everything is ready!!
+7. Once launched, you will have the spotify authorization site open. You need to log in and pass the resulting google.com link to the console 
+
+8. Everything is ready!!
