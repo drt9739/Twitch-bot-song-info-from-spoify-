@@ -3,6 +3,7 @@ import json
 from twitchio.ext import commands
 from twitchio.ext import eventsub
 import urllib
+import spotipy
 
 import config
 import spotify_req
@@ -53,13 +54,17 @@ class Bot(commands.Bot):
 
         if ctx.message.author.name in data['chatters']['broadcaster'] or ctx.message.author.name in data['chatters'][
             'moderators']:
-
             spotify_req.data_update()
             await ctx.send(f'Успешно обновлено :)')
 
         else:
-
             await ctx.send(f'Эта команда доступна только стримеру и модератором StreamerDoesntKnow')
+
+    @commands.command()
+    async def sr(self, ctx, arg1):
+        result = spotify_req.add_track_to_playlist(config.spotify_playlist_id, [arg1])
+        await ctx.send(f'@{ctx.author.name} {result}')
+
 
 
 bot = Bot()

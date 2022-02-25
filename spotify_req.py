@@ -32,6 +32,22 @@ def data_update():
     spotify_object = spotipy.Spotify(auth=token)
 
 
+def add_track_to_playlist(playlist_id, track_ids):
+    spotify_object.trace = False
+
+    if 'https://open.spotify.com/track/' not in track_ids[0]:
+        track = spotify_object.search(track_ids)
+        try:
+            track_ids = [track['tracks']['items'][0]["external_urls"]["spotify"]]
+        except IndexError:
+            return 'Ошибка при добавлении. Возможно вы использовали ссылку не на спотифай или написали бесмысленный ' \
+                   'набор символов egDespair TeaTime'
+
+    playlist_id = playlist_id.split('/')[4].split('?')[0]
+    spotify_object.playlist_add_items(playlist_id, track_ids)
+    return 'Успешно добавлен'
+
+
 song_info = dict()
 scope = 'user-read-currently-playing'
 
