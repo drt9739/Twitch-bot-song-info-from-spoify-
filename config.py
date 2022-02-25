@@ -7,7 +7,9 @@ PREFIX = '&'
 spotify_client_id = 'spotify_client_id'
 spotify_secret = 'spotify_secret'
 spotify_redirect_uri = 'https://google.com/'
-genius_access_token = 'genius_access_token'
+
+# ID of your playlist for requests
+spotify_playlist_id = '52EgT0opSeEB7rpUceW4G1'
 
 # twitch token
 TOKEN_TWITCH = 'Token'
