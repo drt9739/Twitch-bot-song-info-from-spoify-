@@ -6,7 +6,7 @@ RU 🇷🇺 :
 1. Устанавливаем python3.10 https://www.python.org/downloads/
 
 2. Открываем консоль в папке и пишем команды по очереди 
-						pip install twitchio
+						pip install twitchio,
 						pip install spotipy
 						
 3. Достаём токен spotify и secret. Переходим по ссылке https://developer.spotify.com/dashboard/ и логинимся в аккаунт. Нажимаем create an app ![123](https://user-images.githubusercontent.com/87109163/154803557-08be5cfc-5a15-48b8-8fef-29e6cf769974.png)
