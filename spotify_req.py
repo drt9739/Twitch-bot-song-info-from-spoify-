@@ -49,6 +49,15 @@ def add_track_to_playlist(playlist_id, track_ids):
     return 'Успешно добавлен'
 
 
+def clear_playlist(playlist_id):
+    spotify_object.trace = False
+    result = spotify_object.playlist_tracks(playlist_id)
+    track = []
+    for i in result['items']:
+        track.append(i['track']['uri'])
+    spotify_object.user_playlist_remove_all_occurrences_of_tracks(config.username_spotify, playlist_id, track)
+    return 'Плейлист успешно очищен Klass'
+
 song_info = dict()
 scope = 'playlist-modify-public playlist-modify-private user-read-currently-playing user-read-playback-state ' \
             'user-modify-playback-state'

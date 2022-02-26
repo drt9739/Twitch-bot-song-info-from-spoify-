@@ -67,6 +67,20 @@ class Bot(commands.Bot):
                                                    functions.content_msg(ctx.message.content))
         await ctx.send(f'@{ctx.author.name} {result}')
 
+    @commands.command()
+    async def clear(self, ctx: commands.Context):
+        url = f"https://tmi.twitch.tv/group/user/{''.join(config.channels)}/chatters"
+        req = urllib.request.Request(url, headers={"accept": "/"})
+        res = urllib.request.urlopen(req).read()
+        data = json.loads(res)
+
+        if ctx.message.author.name in data['chatters']['broadcaster'] or ctx.message.author.name in data['chatters'][
+            'moderators']:
+            result = spotify_req.clear_playlist(config.spotify_playlist_id)
+            await ctx.send(f'@{ctx.author.name}, {result}')
+        else:
+            await ctx.send(f'@{ctx.author.name}, у вас не достаточно прав.')
+
 
 bot = Bot()
 bot.run()
