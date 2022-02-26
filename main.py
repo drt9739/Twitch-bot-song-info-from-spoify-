@@ -6,6 +6,7 @@ import urllib
 import spotipy
 
 import config
+import functions
 import spotify_req
 
 
@@ -61,10 +62,10 @@ class Bot(commands.Bot):
             await ctx.send(f'Эта команда доступна только стримеру и модератором StreamerDoesntKnow')
 
     @commands.command()
-    async def sr(self, ctx, arg1):
-        result = spotify_req.add_track_to_playlist(config.spotify_playlist_id, [arg1])
+    async def sr(self, ctx: commands.Context):
+        result = spotify_req.add_track_to_playlist(config.spotify_playlist_id,
+                                                   functions.content_msg(ctx.message.content))
         await ctx.send(f'@{ctx.author.name} {result}')
-
 
 
 bot = Bot()
