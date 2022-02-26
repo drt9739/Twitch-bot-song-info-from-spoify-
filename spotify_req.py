@@ -51,7 +51,7 @@ def add_track_to_playlist(playlist_id, track_ids):
 
 song_info = dict()
 scope = 'playlist-modify-public playlist-modify-private user-read-currently-playing user-read-playback-state ' \
-        'user-modify-playback-state'
+            'user-modify-playback-state'
 
 oauth_object = spotipy.SpotifyOAuth(client_id=config.spotify_client_id,
                                     client_secret=config.spotify_secret,
