@@ -1,8 +1,10 @@
+import config
+import random
+
 def content_msg(msg):
     msg = msg.split()
-    msg[0] = ''
-    print(msg)
-    msg = ' '.join(msg)
-    return [msg.strip()]
+    msg.pop(0)
+    return ' '.join(msg)
+
 
 
