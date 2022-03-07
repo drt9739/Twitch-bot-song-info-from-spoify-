@@ -1,6 +1,8 @@
 # Twitch-bot-song-info-from-spoify
 Twitch bot with a built-in song function. She takes information about the music that is playing now
 
+**НУЖЕН СПОТИФАЙ ПРЕМИУМ!!! / YOU NEED SPOTIFY PREMIUM!!!**
+
 
 RU 🇷🇺 :
 1. Устанавливаем python3.10 https://www.python.org/downloads/
