@@ -55,7 +55,7 @@ class Bot(commands.Bot):
     @commands.command()
     async def sr(self, ctx: commands.Context):
         global sr_flag
-        if ctx.message.content == '&sr' or ctx.message.content == '&sr ':
+        if ctx.message.content == f'{config.PREFIX}sr' or ctx.message.content == f'{config.PREFIX}sr ':
             await ctx.send(
                 f'@{ctx.message.author.name}, чтобы заказать трек нужно скинуть ссылка на spotify, '
                 f'навзание трека или ссылку на ютуб '
